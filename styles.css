@@ -6,7 +6,7 @@
 body {
   background-color: #d6d2c8;
 }
-html{
+html {
   width: 100%;
 }
 .nav-main {
@@ -26,13 +26,26 @@ html{
 .nav-main ul li {
   padding: 15px;
 }
+
 a {
   color: black;
   text-decoration: none;
   font-family: "Roboto", Sans-serif;
   font-size: 17px;
   font-weight: 400;
+  text-decoration: none;
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 0% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 2px;
+  transition: background-size 0.3s;
 }
+
+a:hover,
+a:focus {
+  background-size: 100% 2px;
+}
+
 li {
   list-style: none;
 }
@@ -78,16 +91,16 @@ section {
   width: 100%;
 }
 /* POST BANNER */
-.post-banner{
+.post-banner {
   width: 80%;
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
 }
-.post-banner .h1{
+.post-banner .h1 {
   margin-bottom: 20px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 64px;
   color: #979562;
   padding-bottom: 20px;
@@ -101,55 +114,52 @@ section {
   flex-direction: row;
   align-items: center;
   justify-content: center;
-  
 }
 .post-banner .contenedor-about-us .articles {
-  
   width: 70%;
   margin-left: 20px;
   margin-right: 20px;
   height: 100%;
 }
-.post-banner .contenedor-about-us .articles .art1{
+.post-banner .contenedor-about-us .articles .art1 {
   margin-bottom: 50px;
 }
-.articles h3{
+.articles h3 {
   margin-bottom: 15px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
-.articles h3 span{
- background: #979562;
- color: white;
- width: 30px;
- height: 30px;
- display: inline-block;
- border-radius: 50%;
- text-align: center;
- box-shadow: 0 0 6px 0 rgba(0, 0, 0, .5 );
- margin-right: 10px;
+.articles h3 span {
+  background: #979562;
+  color: white;
+  width: 30px;
+  height: 30px;
+  display: inline-block;
+  border-radius: 50%;
+  text-align: center;
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+  margin-right: 10px;
 }
-.articles p{
-  font-family: 'Source Sans Pro', sans-serif;
+.articles p {
+  font-family: "Source Sans Pro", sans-serif;
   font-weight: 200;
   text-align: justify;
 }
 /* CARDS */
-.more{
+.more {
   width: 85%;
   display: flex;
-    flex-direction: column;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin-bottom: 60px;
 }
-.more .cards{
-  
+.more .cards {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
 
-.cards img{
+.cards img {
   width: 100%;
   height: 100%;
   position: absolute;
@@ -158,15 +168,15 @@ section {
   left: 0;
   border-radius: 2%;
 }
-.more h1{
+.more h1 {
   margin-bottom: 20px;
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
   font-size: 64px;
   color: #979562;
   padding-bottom: 20px;
 }
-.cards p{
-  font-family: 'Source Sans Pro', sans-serif;
+.cards p {
+  font-family: "Source Sans Pro", sans-serif;
   font-size: 17px;
   font-weight: 200;
   text-align: justify;
@@ -179,25 +189,25 @@ section {
   transition: 0.5s all;
   border-radius: 2%;
 }
-.cards .card:hover p{
+.cards .card:hover p {
   opacity: 1;
   transform: translateY(0);
 }
-.card{
+.card {
   width: 25%;
   height: 300px;
   margin: 15px;
-  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.5s ease-in-out;
   border-radius: 5px;
   position: relative;
   display: flex;
   align-items: flex-end;
 }
-.card:hover{
+.card:hover {
   transform: translateY(20px);
 }
-.card:before{
+.card:before {
   content: "";
   position: absolute;
   top: 0;
@@ -206,58 +216,55 @@ section {
   width: 100%;
   height: 100%;
   background: linear-gradient(
-      to right,
-      hsla(51, 47%, 84%, 0.438),
-      hsla(44, 51%, 60%, 0.432)
-    );
-    z-index: 2;
-    transition: 0.5s all;
-    opacity: 0;
-    border-radius: 2%;
+    to right,
+    hsla(51, 47%, 84%, 0.438),
+    hsla(44, 51%, 60%, 0.432)
+  );
+  z-index: 2;
+  transition: 0.5s all;
+  opacity: 0;
+  border-radius: 2%;
 }
-.card:hover:before{
+.card:hover:before {
   opacity: 1;
-
 }
 /* footer */
-.sec1{
+.sec1 {
   background-color: #74706c36;
   display: flex;
-  justify-content:space-evenly;
+  justify-content: space-evenly;
   align-items: center;
   height: 60px;
   width: 100%;
   z-index: 1;
   padding-left: 15px;
 }
-.sec1 img{
+.sec1 img {
   width: 145px;
   height: 100%;
 }
-.sec1 a{
+.sec1 a {
   font-size: 30px;
   font-weight: 500px;
 }
-.sec1 a:hover{
+.sec1 a:hover {
   color: white;
 }
 
-
-@media  screen and (max-width:1400px){
-  .banner{
+@media screen and (max-width: 1400px) {
+  .banner {
     height: 600px;
   }
 }
-@media screen and (max-width:950px){
-  .more .cards{
-    
+@media screen and (max-width: 950px) {
+  .more .cards {
     display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
   }
-  .cards img{
-    width:100%;
+  .cards img {
+    width: 100%;
     height: 100%;
     position: absolute;
     object-fit: cover;
@@ -265,77 +272,72 @@ section {
     left: 0;
     border-radius: 2%;
   }
-  .card{
+  .card {
     margin: auto;
   }
-  #card1{
+  #card1 {
     flex-basis: 45%;
   }
-  #card2{
+  #card2 {
     flex-basis: 45%;
   }
-  #card3{
+  #card3 {
     margin-top: 20px;
     flex-basis: 96%;
   }
-  @media  screen and (max-width:770px){
+  @media screen and (max-width: 770px) {
     .post-banner .post-banner-img {
       width: 50%;
     }
 
-    .post-banner .articles{
+    .post-banner .articles {
       width: 50%;
       height: 100%;
     }
-    .post-banner .contenedor-about-us .articles .art1{
+    .post-banner .contenedor-about-us .articles .art1 {
       margin-bottom: 20px;
     }
     .banner .banner-img {
       top: 0px;
       width: 100%;
-      
+
       margin: auto;
       /* position: absolute; */
     }
   }
-  @media  screen and (max-width:700px){
-    .banner{
-      background-position:0;
+  @media screen and (max-width: 700px) {
+    .banner {
+      background-position: 0;
     }
-    .banner .banner-img{
-      height: 470px;
-      
+    .banner .banner-img {
+      min-height: 800px;
     }
     .post-banner .contenedor-about-us {
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      
     }
     .post-banner .contenedor-about-us .articles {
-  
       width: 90%;
     }
     .post-banner .post-banner-img {
       width: 80%;
       margin-bottom: 15px;
     }
-    
   }
-  @media  screen and (max-width:500px){
-    .post-banner .h1{
+  @media screen and (max-width: 500px) {
+    .post-banner .h1 {
       font-size: 60px;
     }
-    .more .cards{
-    
+    .more .cards {
       display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+      flex-wrap: wrap;
     }
-    .cards img{
-      width:100%;
+    .cards img {
+      width: 100%;
       height: 100%;
       position: absolute;
       object-fit: cover;
@@ -343,24 +345,23 @@ section {
       left: 0;
       border-radius: 2%;
     }
-    .card{
+    .card {
       margin: 0 0 30px 0;
     }
-    #card1{
+    #card1 {
       flex-basis: 100%;
     }
-    #card2{
+    #card2 {
       flex-basis: 100%;
     }
-    #card3{
+    #card3 {
       margin-top: 0;
-      flex-basis: 100%
+      flex-basis: 100%;
+    }
   }
-  }
-  @media  screen and (max-width:405px){
-    .post-banner .h1{
+  @media screen and (max-width: 405px) {
+    .post-banner .h1 {
       font-size: 50px;
     }
   }
-  
 }
