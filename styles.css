@@ -57,9 +57,10 @@ li {
   position: relative;
 }
 .banner .banner-img {
-  bottom: 50px;
-  width: 100%;
-  position: absolute;
+  top: 0px;
+  width: 80%;
+  display: block;
+  margin: auto;
 }
 section {
   padding: 60px 0;
