@@ -240,3 +240,8 @@ section {
 
 
 
+@media  screen and (max-widht:1920px){
+  .banner{
+    height: 900px;
+  }
+}
