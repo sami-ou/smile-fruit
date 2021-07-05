@@ -6,6 +6,9 @@
 body {
   background-color: #d6d2c8;
 }
+html{
+  width: 100%;
+}
 .nav-main {
   position: absolute;
   display: flex;
@@ -243,5 +246,104 @@ section {
 @media  screen and (max-width:1400px){
   .banner{
     height: 600px;
+  }
+}
+@media screen and (max-width:950px){
+  .more .cards{
+    
+    display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  }
+  .cards img{
+    width:100%;
+    height: 100%;
+    position: absolute;
+    object-fit: cover;
+    top: 0;
+    left: 0;
+    border-radius: 2%;
+  }
+  .card{
+    margin: auto;
+  }
+  #card1{
+    flex-basis: 45%;
+  }
+  #card2{
+    flex-basis: 45%;
+  }
+  #card3{
+    margin-top: 20px;
+    flex-basis: 96%;
+  }
+  @media  screen and (max-width:770px){
+    .post-banner .post-banner-img {
+      width: 50%;
+    }
+
+    .post-banner .articles{
+      width: 50%;
+      height: 100%;
+    }
+    .post-banner .contenedor-about-us .articles .art1{
+      margin-bottom: 20px;
+    }
+    .banner .banner-img {
+      top: 0px;
+      width: 100%;
+      display: block;
+      margin: auto;
+      /* position: absolute; */
+    }
+  }
+  @media  screen and (max-width:700px){
+    .post-banner .contenedor-about-us {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      
+    }
+    .post-banner .post-banner-img {
+      width: 50%;
+      margin-bottom: 15px;
+    }
+    
+  }
+  @media  screen and (max-width:500px){
+    .post-banner .h1{
+      font-size: 60px;
+    }
+    .more .cards{
+    
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    }
+    .cards img{
+      width:100%;
+      height: 100%;
+      position: absolute;
+      object-fit: cover;
+      top: 0;
+      left: 0;
+      border-radius: 2%;
+    }
+    .card{
+      margin: 0 0 30px 0;
+    }
+    #card1{
+      flex-basis: 100%;
+    }
+    #card2{
+      flex-basis: 100%;
+    }
+    #card3{
+      margin-top: 0;
+      flex-basis: 100%
+  }
   }
 }
