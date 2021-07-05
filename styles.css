@@ -293,12 +293,19 @@ section {
     .banner .banner-img {
       top: 0px;
       width: 100%;
-      display: block;
+      
       margin: auto;
       /* position: absolute; */
     }
   }
   @media  screen and (max-width:700px){
+    .banner{
+      background-position:0;
+    }
+    .banner .banner-img{
+      height: 470px;
+      
+    }
     .post-banner .contenedor-about-us {
       display: flex;
       flex-direction: column;
@@ -306,8 +313,12 @@ section {
       justify-content: center;
       
     }
+    .post-banner .contenedor-about-us .articles {
+  
+      width: 90%;
+    }
     .post-banner .post-banner-img {
-      width: 50%;
+      width: 80%;
       margin-bottom: 15px;
     }
     
@@ -346,4 +357,10 @@ section {
       flex-basis: 100%
   }
   }
+  @media  screen and (max-width:405px){
+    .post-banner .h1{
+      font-size: 50px;
+    }
+  }
+  
 }
